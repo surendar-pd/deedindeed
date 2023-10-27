@@ -14,12 +14,12 @@ const Footer = () => {
     return (
         <div
             id="contact"
-            className="w-full h-full bg-primary bg-[#0b72ff] text-slate-200 p-4 md:px-16 md:pt-16 lg:"
+            className="w-full h-full bg-primary bg-green-700 text-slate-200 p-4 md:px-16 md:pt-16 lg:"
         >
             <div className="lg:flex w-full justify-between">
                 <div className="mb-8 flex flex-col gap-8">
                     <h1 className="font-semibold text-2xl">
-                        <span className="">Deed</span>Indeed
+                        <span className="">Deed</span>Indeed Foundation
                     </h1>
                     <div className="flex items-center gap-1">
                         <MapPin
@@ -28,8 +28,8 @@ const Footer = () => {
                             className="hover:text-secondary transition-all duration-300"
                         />
                         <p className=" text-sm">
-                            903, Ten Square, Jiva Mahalaya Marg, Andheri East,
-                            Mumbai - 400069
+                            32, Madhuban Industrial Estate, Mahakali Caves Road,
+                            Andheri (East), Mumbai
                         </p>
                     </div>
                 </div>
@@ -37,7 +37,7 @@ const Footer = () => {
                     <div className="">
                         <h1 className="font-semibold mb-2">Contact Us</h1>
                         <div className="flex flex-col md:flex-row gap-4 text-sm">
-                            <Link
+                            {/* <Link
                                 target="_blank"
                                 href={"mailto:vaibhav@flookup.com"}
                                 className="flex items-center gap-2"
@@ -62,7 +62,7 @@ const Footer = () => {
                                     className="hover:text-secondary transition-all duration-300"
                                 />
                                 <p className="font-medium">ankit@flookup.com</p>
-                            </Link>
+                            </Link> */}
                             <Link
                                 target="_blank"
                                 href={"tel:+917059010203"}

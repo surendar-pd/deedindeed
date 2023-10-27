@@ -9,14 +9,27 @@ const builder = imageUrlBuilder(client);
 export default function Posts({ posts = [] }: { posts: SanityDocument[] }) {
     return (
         <>
-            <section className="w-full h-full bg-[#0b72ff]">
-                <section className="w-full h-[50vh] p-4 flex flex-col justify-center text-white md:px-16 bg-[url('/assets/bg.svg')] bg-no-repeat bg-contain bg-right lg:max-w-7xl lg:mx-auto">
+            <section className="w-full h-full bg-green-700">
+                <section className="w-full h-[100vh] md:h-[75vh] lg:h-[50vh] p-4 flex flex-col justify-center text-white md:px-16 bg-[url('/assets/bg.svg')] bg-no-repeat bg-contain bg-right lg:max-w-7xl lg:mx-auto">
                     <h1 className="text-4xl font-semibold lg:max-w-2xl">
-                        Unlock Accuracy and Efficiency
-                    </h1>
-                    <p className="text-2xl lg:max-w-2xl mt-4">
                         Empowering Change for a Greener Tomorrow: Climate
                         Awareness and Carbon Action !
+                    </h1>
+                    <p className="mt-4 max-w-4xl">
+                        Welcome to our comprehensive platform dedicated to
+                        addressing the pressing issue of climate change. Here,
+                        we strive to empower individuals, businesses, and
+                        communities with the knowledge and tools necessary to
+                        navigate the complex landscape of climate challenges and
+                        mitigation strategies. Our expertly curated resources
+                        delve into the latest insights on climate science,
+                        offering a deeper understanding of the impacts we face.
+                        From informative articles on achieving net-zero
+                        emissions to practical guides on earning carbon credits,
+                        we provide actionable steps for a more sustainable
+                        future. Join us in embracing the global movement to
+                        combat climate change and together, we can pave the way
+                        towards a greener, more resilient planet
                     </p>
                     {/* <button className="w-fit transition-all duration-300 bg-[#1f4b97] px-6 py-2 hover:bg-[#1f4b9770] rounded-lg font-medium">
                         Start reading
@@ -149,21 +162,21 @@ export default function Posts({ posts = [] }: { posts: SanityDocument[] }) {
                 </div>
             </section>
             <section className="py-16 lg:py-32 p-4 md:px-16 lg:max-w-7xl lg:mx-auto w-full h-full">
-                <div className=" rounded-lg text-white font-medium p-12 md:p-16 text-center bg-[#0b72ff] bg-[url('/assets/card2.svg')] bg-no-repeat bg-fill bg-left w-full">
+                <div className=" rounded-lg text-white font-medium p-12 md:p-16 text-center bg-green-700 bg-[url('/assets/card2.svg')] bg-no-repeat bg-fill bg-left w-full">
                     <div className="w-full h-full flex flex-col justify-center items-center gap-6 lg:mx-auto lg:max-w-xl">
                         <h1 className="text-4xl">Stay in the know</h1>
                         <p className="text-xl">
                             Share your email address to receive monthly updates
-                            containing valuable insights on valuation. Rest
-                            assured, we will not inundate your inbox with
-                            unwanted messages.
+                            containing valuable insights on climate
+                            change / action. Rest assured, we will not inundate
+                            your inbox with unwanted messages.
                         </p>
                         <div className="flex flex-col gap-4 w-full md:flex-row">
                             <input
                                 placeholder="Enter your email"
                                 className="w-full text-slate-600 outline-none px-6 py-2 rounded-lg "
                             ></input>
-                            <button className="w-full lg:w-fit transition-all duration-300 bg-[#1f4b97] px-6 py-2 hover:bg-[#1f4b9770] rounded-lg font-medium">
+                            <button className="w-full lg:w-fit transition-all duration-300 bg-green-800 px-6 py-2 hover:bg-green-900 rounded-lg font-medium">
                                 Subscribe
                             </button>
                         </div>

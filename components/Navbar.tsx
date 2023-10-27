@@ -5,11 +5,11 @@ import Image from "next/image";
 
 const Navbar = () => {
     const pathname = usePathname();
-    const [header, setHeader] = useState("bg-[#0b72ff] text-white");
+    const [header, setHeader] = useState("bg-green-700 text-white");
     const listenScrollEvent = () => {
         window.scrollY > 10
             ? setHeader("bg-white")
-            : setHeader("bg-[#0b72ff] text-white");
+            : setHeader("bg-green-700 text-white");
     };
     useEffect(() => {
         window.addEventListener("scroll", listenScrollEvent);
@@ -21,7 +21,7 @@ const Navbar = () => {
         >
             <div className="w-full h-[5rem] flex justify-between items-center p-4 md:px-16 lg:max-w-7xl lg:mx-auto">
                 <div>
-                    <Image src={"/assets/logo1.png"} unoptimized alt="logo" width={100} height={100} className="w-60" />
+                    <Image src={"/assets/logo1.png"} unoptimized alt="logo" width={100} height={100} className="w-72" />
                 </div>
                 <div></div>
             </div>
